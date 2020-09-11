@@ -1,23 +1,23 @@
-BFS:
+BFS
 
-Currently at A ,   queued nodes: ['B'] ,                visited nodes:  ['A']
-Currently at B ,   queued nodes: ['C', 'F'] ,           visited nodes:  ['A', 'B']
-Currently at C ,   queued nodes: ['F', 'E', 'I'] ,      visited nodes:  ['C', 'A', 'B']
-Currently at F ,   queued nodes: ['E', 'I', 'D', 'G'] , visited nodes:  ['C', 'A', 'F', 'B']
-Currently at E ,   queued nodes: ['I', 'D', 'G'] ,      visited nodes:  ['F', 'A', 'B', 'E', 'C']
-Currently at I ,   queued nodes: ['D', 'G'] ,           visited nodes:  ['F', 'A', 'B', 'E', 'C', 'I']
-Final path: ['A', 'B', 'C', 'I']
+Currently at A , queued nodes: ['B'] ,                    visited nodes:  ['A']
+Currently at B , queued nodes: ['C', 'F'] ,               visited nodes:  ['B', 'A']
+Currently at C , queued nodes: ['F', 'E', 'I'] ,          visited nodes:  ['C', 'B', 'A']
+Currently at F , queued nodes: ['E', 'I', 'D', 'G'] ,     visited nodes:  ['C', 'B', 'F', 'A']
+Currently at E , queued nodes: ['I', 'D', 'G'] ,          visited nodes:  ['A', 'B', 'C', 'F', 'E']
+Currently at I , queued nodes: ['D', 'G'] ,               visited nodes:  ['A', 'I', 'B', 'C', 'F', 'E']
+Currently at D , queued nodes: ['G'] ,                    visited nodes:  ['D', 'A', 'I', 'B', 'C', 'F', 'E']
+Currently at G , queued nodes: ['H'] ,                    visited nodes:  ['D', 'A', 'I', 'B', 'C', 'F', 'G', 'E']
+Currently at H , queued nodes: [] ,                       visited nodes:  ['D', 'A', 'I', 'B', 'C', 'F', 'G', 'E', 'H']
+Final path: ['A', 'B', 'F', 'G', 'H']
 
 --
 
-DFS:
+DFS
 
-Currently at A ,   queued nodes: ['B'] ,                visited nodes:  ['A']
-Currently at B ,   queued nodes: ['C', 'F'] ,           visited nodes:  ['A', 'B']
-Currently at F ,   queued nodes: ['C', 'D', 'G'] ,      visited nodes:  ['F', 'A', 'B']
-Currently at G ,   queued nodes: ['C', 'D', 'H'] ,      visited nodes:  ['F', 'A', 'G', 'B']
-Currently at H ,   queued nodes: ['C', 'D'] ,           visited nodes:  ['F', 'A', 'G', 'B', 'H']
-Currently at D ,   queued nodes: ['C'] ,                visited nodes:  ['F', 'D', 'A', 'G', 'B', 'H']
-Currently at C ,   queued nodes: ['E', 'I'] ,           visited nodes:  ['F', 'D', 'A', 'G', 'B', 'C', 'H']
-Currently at I ,   queued nodes: ['E'] ,                visited nodes:  ['F', 'D', 'A', 'G', 'B', 'C', 'H', 'I']
-Final path: ['A', 'B', 'C', 'I']
+Currently at A , queued nodes: ['B'] ,                   visited nodes:  ['A']
+Currently at B , queued nodes: ['C', 'F'] ,              visited nodes:  ['B', 'A']
+Currently at F , queued nodes: ['C', 'D', 'G'] ,         visited nodes:  ['B', 'F', 'A']
+Currently at G , queued nodes: ['C', 'D', 'H'] ,         visited nodes:  ['G', 'B', 'F', 'A']
+Currently at H , queued nodes: ['C', 'D'] ,              visited nodes:  ['A', 'B', 'G', 'F', 'H']
+Final path: ['A', 'B', 'F', 'G', 'H']
