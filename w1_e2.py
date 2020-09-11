@@ -35,11 +35,11 @@ def search(graph, start, end, is_dfs=False):
 		if cur_node == end:
 			print("Final path:", paths[cur_node])
 			return True
-	
+
 	return False
 
 
 if __name__ == "__main__":
-	search(graph, 'A', 'I')
+	search(graph, 'A', 'H')
 	print("--")
-	search(graph, 'A', 'I', True)
+	search(graph, 'A', 'H', True)
